@@ -9,7 +9,6 @@
         background-color: #f4f4f4;
         padding: 30px;
     }
-
     .container {
         background: white;
         padding: 25px;
@@ -19,18 +18,13 @@
         box-shadow: 0px 0px 10px #ccc;
         border: 1px solid #ddd;
     }
-
-    h2 {
-        text-align: center;
-    }
-
+    h2 { text-align: center; }
     label {
         display: inline-block;
         width: 140px;
         font-weight: bold;
         margin-bottom: 10px;
     }
-
     input[type="number"] {
         width: 180px;
         padding: 8px;
@@ -41,13 +35,11 @@
         border-radius: 5px;
         text-align: center;
     }
-
     .resultado {
         color: green;
         font-weight: bold;
         font-size: 20px;
     }
-
     button {
         padding: 10px 20px;
         font-size: 16px;
@@ -58,11 +50,7 @@
         color: white;
         border-radius: 5px;
     }
-
-    button:hover {
-        background: #c9302c;
-    }
-
+    button:hover { background: #c9302c; }
     .info {
         font-size: 12px;
         text-align: center;
@@ -71,7 +59,6 @@
     }
 </style>
 </head>
-
 <body>
 <div class="container">
     <h2>Calculadora de Descuentos</h2>
@@ -106,10 +93,8 @@ function calcular() {
     document.getElementById("resultado").innerText = resultadoFinal.toFixed(2);
     document.getElementById("monto").innerText = montoDescontado.toFixed(2);
 }
-
 document.getElementById("cantidad").addEventListener("input", calcular);
 document.getElementById("descuento").addEventListener("input", calcular);
-
 calcular();
 
 function borrar() {
